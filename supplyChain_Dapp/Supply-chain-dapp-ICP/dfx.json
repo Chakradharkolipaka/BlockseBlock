@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "supply-chain-dapp-backend": {
+      "main": "src/supply-chain-dapp-backend/main.mo",
+      "type": "motoko"
+    },
+    "supply-chain-dapp-frontend": {
+      "dependencies": [
+        "supply-chain-dapp-backend"
+      ],
+      "source": [
+        "src/supply-chain-dapp-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "supply-chain-dapp-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
